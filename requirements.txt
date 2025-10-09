@@ -1,4 +1,6 @@
 pandas
-sciket-learn
+scikit-learn
 joblib
+
+
 
