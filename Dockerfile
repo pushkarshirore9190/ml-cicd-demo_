@@ -11,8 +11,9 @@ COPY . .
 RUN pip install --upgrade pip && \
     pip install -r requirements.txt
 
-# Default command to run when container starts
-CMD ["python", "train.py"]
+# Expose Streamlit default port
+EXPOSE 8501
 
-
+# Default command to run Streamlit app
+CMD ["streamlit", "run", "streamlit_app.py"]
 
